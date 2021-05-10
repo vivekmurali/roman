@@ -1,9 +1,18 @@
-package main
+/*
+
+The roman package provides two functions, parse and roman.
+This package is used to change between decimals and roman numerals.
+
+*/
+package roman
 
 import (
 	"strings"
 )
 
+// Parses a roman numeral input and returns it's decimal value
+// As of now, there is no validation of the roman numeral
+// All non roman characters take a value of 0
 func Parse(s string) int {
 	val := make(map[string]int)
 	val["I"] = 1

@@ -1,6 +1,9 @@
-package main
+package roman
 
-import "testing"
+import (
+	"fmt"
+	"testing")
+
 
 func TestParse(t *testing.T) {
 	var tests = []struct {
@@ -28,4 +31,10 @@ func TestParse(t *testing.T) {
 
 		})
 	}
+}
+
+func ExampleParse() {
+	dec := Parse("XII")
+	fmt.Println(dec)
+	// Output: 12
 }

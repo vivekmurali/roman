@@ -1,6 +1,9 @@
-package main
+package roman
 
-import "testing"
+import (
+	"fmt"
+	"testing")
+
 
 func TestRoman(t *testing.T) {
 	var tests = []struct {
@@ -28,4 +31,10 @@ func TestRoman(t *testing.T) {
 
 		})
 	}
+}
+
+func ExampleRoman() {
+	s := Roman(100)
+	fmt.Println(s)
+	// Output: C
 }
