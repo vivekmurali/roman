@@ -2,8 +2,8 @@ package roman
 
 import (
 	"fmt"
-	"testing")
-
+	"testing"
+)
 
 func TestParse(t *testing.T) {
 	var tests = []struct {
