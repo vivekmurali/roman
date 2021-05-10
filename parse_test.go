@@ -13,6 +13,11 @@ func TestParse(t *testing.T) {
 		{"Test 3", 2199, "MMCXCIX"},
 		{"Test 4", 175, "CLXXV"},
 		{"Test 5", 1389, "MCCCLXXXIX"},
+		{"Test 6", 521, "DxXI"},
+		{"Test 7", 123, "cxxiii"},
+		{"Test 8", 1998, "MCMXCViii"},
+		{"Test 9", 2000, "MM"},
+		{"Test 10", 2021, "mmXXI"},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

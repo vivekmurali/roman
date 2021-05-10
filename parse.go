@@ -14,6 +14,7 @@ func Parse(s string) int {
 	val["D"] = 500
 	val["M"] = 1000
 
+	s = strings.ToUpper(s)
 	letters := strings.Split(s, "")
 
 	sum := 0
