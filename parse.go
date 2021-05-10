@@ -1,6 +1,8 @@
 package main
 
-import "strings"
+import (
+	"strings"
+)
 
 func Parse(s string) int {
 	val := make(map[string]int)
@@ -16,6 +18,10 @@ func Parse(s string) int {
 
 	sum := 0
 	for i := 0; i < len(letters); i++ {
+		if i == len(letters)-1 {
+			sum += val[letters[i]]
+			break
+		}
 		if val[letters[i]] < val[letters[i+1]] {
 			sum += val[letters[i+1]] - val[letters[i]]
 			i++
